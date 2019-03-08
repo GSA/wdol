@@ -1,0 +1,24 @@
+{
+  "name": "wdol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass _site/styles.scss -o _site/dist",
+    "federalist": "npm install --only=dev && npm run compile:scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/wdol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSA/wdol/issues"
+  },
+  "homepage": "https://github.com/GSA/wdol#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
