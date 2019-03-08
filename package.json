@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:scss": "node-sass _site/styles.scss -o _site/dist",
-    "federalist": "npm install --only=dev && npm run compile:scss",
+    "federalist": "npm install --only=dev && node-sass work/site_repo/_site/styles.scss -o work/site_repo/_site/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
