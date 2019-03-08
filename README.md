@@ -1,6 +1,6 @@
 # WDOL
 
-To compile SCSS to CSS run the bellow command
+To compile SCSS to CSS run
 ```
 npm run compilie:scss
 ```
