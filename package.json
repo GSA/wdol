@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass _site/styles.scss -o _site/dist",
-    "federalist": "npm install --only=dev && node-sass ./work/site_repo/_site/styles.scss -o ./work/site_repo/_site/dist",
+    "compile:scss": "node-sass src/styles.scss -o ./src",
+    "copy:site": "copy ./src/**/*.* ./_site/",
+    "federalist": "npm install --only=dev && npm run compile:scss && npm run copy:site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/GSA/wdol#readme",
   "devDependencies": {
+    "copy": "^0.3.2",
     "node-sass": "^4.11.0"
   }
 }
