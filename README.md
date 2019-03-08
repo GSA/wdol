@@ -1,6 +1,11 @@
 # WDOL
 
-To compile SCSS to CSS run
+## Setup local dev
+```
+npm install
+```
+
+## Compile SCSS
 ```
 npm run compilie:scss
 ```
