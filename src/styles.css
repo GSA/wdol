@@ -220,3 +220,8 @@ h2 {
 #sam-url > a {
   text-decoration: none;
   font-weight: 700px; }
+
+hr {
+  height: 2px;
+  width: 100%;
+  color: black; }
