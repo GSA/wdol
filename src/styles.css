@@ -81,15 +81,19 @@
   background-color: inherit;
   border: solid 2px #287DB6;
   border-radius: 8px;
-  height: 60px; }
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .splash-button:hover {
   background-color: inherit;
   border: solid 3px #1f618e; }
 
 .splash-btn-icon {
-  float: left;
-  margin: auto; }
+  margin: auto;
+  padding: 10px;
+  align-self: center; }
 
 .splash-button > p {
   color: #287DB6;
@@ -97,7 +101,7 @@
   text-align: left;
   letter-spacing: -0.5px;
   line-height: 1;
-  margin-left: 50px; }
+  margin: auto; }
 
 #video-summary {
   margin: 0 20px 20px 20px;
@@ -138,6 +142,9 @@
   color: #8B8F91; }
 
 @media all and (min-width: 500px) {
+  .tablet\:grid-col {
+    flex: 1 0 0;
+    width: auto; }
   .splash-banner-logo {
     max-width: 30%;
     float: left;
@@ -200,7 +207,8 @@ a {
   color: #0071BD; }
 
 body {
-  min-width: 550px; }
+  min-width: 550px;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 .grid-row {
   display: flex;
