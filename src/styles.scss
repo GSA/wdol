@@ -139,6 +139,10 @@
   color: #8B8F91;
 }
 @media all and (min-width: 500px){
+  .tablet\:grid-col {
+    flex: 1 0 0;
+    width: auto;
+  }
   .splash-banner-logo{
     max-width: 30%;
     float: left;
@@ -217,6 +221,7 @@ a{
 }
 body{
   min-width: 550px;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 .grid-row{
   display:flex;
