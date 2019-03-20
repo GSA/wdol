@@ -84,7 +84,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 2px; }
 
 .splash-button:hover {
   background-color: inherit;
