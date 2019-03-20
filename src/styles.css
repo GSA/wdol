@@ -83,7 +83,8 @@
   height: 60px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none; }
 
 .splash-button:hover {
   background-color: inherit;
@@ -233,3 +234,22 @@ hr {
   height: 2px;
   width: 100%;
   color: black; }
+
+sam-banner {
+  /**Create circle to wrap the icon on the banner**/ }
+  sam-banner .sticky-banner {
+    position: fixed;
+    z-index: 20000;
+    background: #f1f1f1;
+    width: 100%; }
+  sam-banner .span-circle-wrap {
+    border-radius: 50%;
+    width: 43px;
+    line-height: 40px;
+    text-align: center; }
+  sam-banner .blue-circle-wrap {
+    border: 1px solid #2B81AF;
+    color: #2B81AF; }
+  sam-banner .green-circle-wrap {
+    border: 1px solid green;
+    color: green; }
