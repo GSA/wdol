@@ -206,20 +206,13 @@
 
 //added styles
 .usa-banner {
-  font-family: "Source Sans Pro Web", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   height: 40px;
   display: flex;
   background-color: #F0F0F0;
   flex-wrap: wrap;
 }
-.flag-icon{
-  width: 20px;
-  margin:0;
-  padding:0;
-}
 .usa-banner-header{
-  min-width: 480px;
-  width: 90%;
+  width: 100%;
 }
 a{
   color: #0071BD;
