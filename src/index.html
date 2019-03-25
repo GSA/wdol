@@ -13,17 +13,17 @@
   <div class="usa-accordion">
     <header class="usa-banner-header">
       <div class="usa-grid usa-banner-inner">
-      <img src="flag.png" alt="U.S. flag">
+      <img src="flag.png" alt="U.S. flag" height="20px">
       <p>An official website of the United States government</p>
-      <button class="usa-accordion-button usa-banner-button"
+      <button class="usa-accordion-button"
         aria-expanded="false" aria-controls="gov-banner">
         <span class="usa-banner-button-text">Here's how you know</span>
       </button>
       </div>
     </header>
-    <div class="pannel" id="gov-banner">
+    <div class="content" id="gov-banner">
       <div class="usa-banner-guidance-gov usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="icon-dot-gov.svg" alt="Dot gov">
+        <img class="usa-banner-icon usa-media_block-img" src="icon-dot-gov.svg" alt="Dot gov" height="40px">
         <div class="usa-media_block-body">
           <p>
             <strong>The .gov means it’s official.</strong>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="usa-banner-guidance-ssl usa-width-one-half">
-        <img class="usa-banner-icon usa-media_block-img" src="icon-https.svg" alt="Https">
+        <img class="usa-banner-icon usa-media_block-img" src="icon-https.svg" alt="Https" height="40px">
         <div class="usa-media_block-body">
           <p>
             <strong>The site is secure.</strong>
@@ -46,17 +46,17 @@
   </div>
 </section>
 <script>
-var acc = document.getElementsByClassName("usa-accordion-button usa-banner-button");
+var acc = document.getElementsByClassName("usa-accordion-button");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      panel.style.display = "block";
+      content.style.display = "block";
     }
   });
 }
