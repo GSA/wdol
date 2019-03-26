@@ -3704,6 +3704,172 @@ input[type="search"] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
+.usa-accordion,
+.usa-accordion-bordered {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .usa-accordion > li,
+  .usa-accordion-bordered > li {
+    margin-bottom: 0; }
+  .usa-accordion > ul li ul,
+  .usa-accordion-bordered > ul li ul {
+    list-style: disc; }
+    .usa-accordion > ul li ul > li > ul,
+    .usa-accordion-bordered > ul li ul > li > ul {
+      list-style: circle; }
+      .usa-accordion > ul li ul > li > ul > li > ul,
+      .usa-accordion-bordered > ul li ul > li > ul > li > ul {
+        list-style: square; }
+  .usa-accordion + .usa-accordion,
+  .usa-accordion + .usa-accordion-bordered,
+  .usa-accordion-bordered + .usa-accordion,
+  .usa-accordion-bordered + .usa-accordion-bordered {
+    margin-top: 1rem; }
+  .usa-accordion > ul,
+  .usa-accordion-bordered > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    .usa-accordion > ul > li,
+    .usa-accordion-bordered > ul > li {
+      margin-bottom: 0; }
+    .usa-accordion > ul > li,
+    .usa-accordion-bordered > ul > li {
+      background-color: #f1f1f1;
+      font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      list-style: none;
+      margin-bottom: 0.5rem;
+      width: 100%; }
+    .usa-accordion > ul button,
+    .usa-accordion-bordered > ul button {
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      -webkit-font-smoothing: auto;
+      background-color: #f1f1f1;
+      background-image: url("../img/minus.png");
+      background-image: url("../img/minus.svg");
+      background-position: right 2rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5rem;
+      color: #212121;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-weight: 700;
+      margin: 0;
+      padding: 1.5rem 5.5rem 1.5rem 2rem;
+      width: 100%; }
+      .usa-accordion > ul button:hover,
+      .usa-accordion-bordered > ul button:hover {
+        background-color: transparent; }
+      .usa-accordion > ul button:hover,
+      .usa-accordion-bordered > ul button:hover {
+        background-color: #d6d7d9;
+        color: #212121; }
+      .usa-accordion > ul button h1,
+      .usa-accordion > ul button h2,
+      .usa-accordion > ul button h3,
+      .usa-accordion > ul button h4,
+      .usa-accordion > ul button h5,
+      .usa-accordion > ul button h6,
+      .usa-accordion-bordered > ul button h1,
+      .usa-accordion-bordered > ul button h2,
+      .usa-accordion-bordered > ul button h3,
+      .usa-accordion-bordered > ul button h4,
+      .usa-accordion-bordered > ul button h5,
+      .usa-accordion-bordered > ul button h6 {
+        margin: 0; }
+    .usa-accordion > ul [aria-expanded=false],
+    .usa-accordion-bordered > ul [aria-expanded=false] {
+      background-image: url("../img/plus.png");
+      background-image: url("../img/plus.svg");
+      background-repeat: no-repeat;
+      background-size: 1.5rem; }
+  .usa-accordion > li,
+  .usa-accordion-bordered > li {
+    background-color: #f1f1f1;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    width: 100%; }
+
+.usa-accordion-bordered .usa-accordion-content {
+  border-bottom: 3px solid #f1f1f1;
+  border-left: 3px solid #f1f1f1;
+  border-right: 3px solid #f1f1f1; }
+
+.usa-accordion-content {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 1.5rem 2rem; }
+  .usa-accordion-content > *:first-child {
+    margin-top: 0; }
+  .usa-accordion-content > *:last-child {
+    margin-bottom: 0; }
+  .usa-accordion-content:not([aria-hidden]) {
+    position: absolute;
+    left: -999em; }
+  .usa-accordion-content[aria-hidden=true] {
+    display: none; }
+
+.usa-accordion-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f1f1f1;
+  background-image: url("../img/minus.png");
+  background-image: url("../img/minus.svg");
+  background-position: right 2rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.5rem 5.5rem 1.5rem 2rem;
+  width: 100%; }
+  .usa-accordion-button:hover {
+    background-color: transparent; }
+  .usa-accordion-button:hover {
+    background-color: #d6d7d9;
+    color: #212121; }
+  .usa-accordion-button h1,
+  .usa-accordion-button h2,
+  .usa-accordion-button h3,
+  .usa-accordion-button h4,
+  .usa-accordion-button h5,
+  .usa-accordion-button h6 {
+    margin: 0; }
+
+.usa-accordion-button[aria-expanded=false] {
+  background-image: url("../img/plus.png");
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 1.5rem; }
+
 #splash-page {
   background-color: white;
   margin: 0;
@@ -3925,21 +4091,6 @@ hr {
   width: 100%;
   color: black; }
 
-sam-banner {
-  /**Create circle to wrap the icon on the banner**/ }
-  sam-banner .sticky-banner {
-    position: fixed;
-    z-index: 20000;
-    background: #f1f1f1;
-    width: 100%; }
-  sam-banner .span-circle-wrap {
-    border-radius: 50%;
-    width: 43px;
-    line-height: 40px;
-    text-align: center; }
-  sam-banner .blue-circle-wrap {
-    border: 1px solid #2B81AF;
-    color: #2B81AF; }
-  sam-banner .green-circle-wrap {
-    border: 1px solid green;
-    color: green; }
+.usa-banner-inner {
+  margin: 0 !important;
+  padding: 0 !important; }
