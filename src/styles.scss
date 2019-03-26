@@ -1,6 +1,6 @@
 @import 'node_modules/uswds/src/stylesheets/uswds.scss';
 @import 'node_modules/uswds/src/stylesheets/core/_variables.scss';
-
+@import 'node_modules/uswds/src/stylesheets/components/_accordions.scss';
 
 #splash-page{
   background-color: white;
@@ -79,6 +79,7 @@
 #splash-button{
   margin: 10px auto 10px auto;
   width: 230px;
+  box-sizing: content-box;
 }
 .splash-button{
   background-color: inherit;
@@ -239,32 +240,36 @@ hr{
   width: 100%;
   color: black;
 }
-
-
-sam-banner {
-  .sticky-banner{
-    position: fixed;
-    z-index: 20000;
-    background: #f1f1f1;
-    width: 100%;
-  }
-
-  /**Create circle to wrap the icon on the banner**/
-  .span-circle-wrap{
-    border-radius: 50%;
-    width: 43px;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  .blue-circle-wrap{
-    border: 1px solid #2B81AF;
-    color: #2B81AF;
-  }
-
-  .green-circle-wrap{
-    border: 1px solid green;
-    color: green;
-
-  }
+.usa-banner-inner{
+  margin: 0 !important;
+  padding: 0 !important;
 }
+//
+//
+// sam-banner {
+//   .sticky-banner{
+//     position: fixed;
+//     z-index: 20000;
+//     background: #f1f1f1;
+//     width: 100%;
+//   }
+//
+//   /**Create circle to wrap the icon on the banner**/
+//   .span-circle-wrap{
+//     border-radius: 50%;
+//     width: 43px;
+//     line-height: 40px;
+//     text-align: center;
+//   }
+//
+//   .blue-circle-wrap{
+//     border: 1px solid #2B81AF;
+//     color: #2B81AF;
+//   }
+//
+//   .green-circle-wrap{
+//     border: 1px solid green;
+//     color: green;
+//
+//   }
+// }
