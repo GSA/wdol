@@ -212,6 +212,9 @@
 a{
   color: #0071BD;
 }
+a:visited{
+  color: #0071BD;
+}
 body{
   min-width: 550px;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -243,7 +246,4 @@ hr{
 .usa-banner-inner{
   margin: 0 !important;
   padding: 0 !important;
-}
-a:visited{
-  color:inherit;
 }
