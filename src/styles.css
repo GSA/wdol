@@ -7606,7 +7606,7 @@ a {
   color: #0071BD; }
 
 a:visited {
-  color: #0071BD; }
+  color: #0071BD !important; }
 
 body {
   min-width: 550px;
