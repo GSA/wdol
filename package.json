@@ -21,6 +21,7 @@
   "homepage": "https://github.com/GSA/wdol#readme",
   "devDependencies": {
     "copy": "^0.3.2",
+    "uswds": "^1.6.12",
     "node-sass": "^4.11.0"
   },
   "dependencies": {
