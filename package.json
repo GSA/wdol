@@ -1,7 +1,7 @@
 {
   "name": "wdol",
   "version": "1.0.0",
-  "description": "",
+  "description": "```\r npm install\r ```",
   "main": "index.js",
   "scripts": {
     "compile:scss": "node-sass src/styles.scss -o ./src",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/GSA/wdol.git"
   },
-  "author": "",
+  "author": "Samantha Baker",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GSA/wdol/issues"
@@ -22,5 +22,11 @@
   "devDependencies": {
     "copy": "^0.3.2",
     "node-sass": "^4.11.0"
-  }
+  },
+  "dependencies": {
+    "uswds": "^1.6.12"
+  },
+  "keywords": [
+    "wdol"
+  ]
 }
