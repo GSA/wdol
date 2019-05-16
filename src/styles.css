@@ -7478,10 +7478,8 @@ input[type="search"] {
 
 #buttons-summary > p {
   color: #5F5F5F;
-  line-height: 1.5;
-  font-stretch: semi-condensed;
   padding-bottom: 0 !important;
-  font: 400 19px/24px "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif; }
+  font: 400 20px/1.5 "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif; }
 
 #splash-button {
   margin: 10px auto 10px auto;
@@ -7507,7 +7505,7 @@ input[type="search"] {
   margin: auto;
   padding: 10px;
   align-self: center;
-  max-height: 30; }
+  max-height: 30px; }
 
 .splash-button > p {
   color: #287DB6;
@@ -7526,7 +7524,6 @@ input[type="search"] {
   color: #5F5F5F;
   line-height: 1.5;
   font-stretch: semi-condensed;
-  color: #323B44;
   text-align: center;
   line-height: 1.5;
   font-size: 20px; }
