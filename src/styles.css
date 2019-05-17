@@ -7410,83 +7410,68 @@ input[type="search"] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
-#splash-page {
+#splash {
   background-color: white;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column; }
 
-#splash-banner {
-  width: 100%; }
+#splash__banner {
+  text-align: center; }
 
-#splash-banner-logo {
-  text-align: center;
-  margin: auto; }
-
-.splash-banner-logo {
+.splash__banner {
   padding: 20px; }
 
-#splash-logo {
-  margin: 30px auto 30px auto;
+#splash__logo {
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap; }
 
-#splash-id {
-  height: 100px; }
-
-#wdol-id {
+#splash__logo_wdol {
   width: 50%;
-  height: 110px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 130px; }
 
-#splash-sam-logo {
-  width: 50%;
-  height: 130px;
-  margin: auto;
-  text-align: center; }
-
-#splash-wdol-summary {
+#splash__logo_summary {
   text-align: center;
   width: 100%; }
-
-.wdol-sum {
-  font-weight: 600; }
 
 .splash-line {
   align-self: center;
   width: 150px;
-  margin: 30px auto 30px auto; }
+  margin: 30px auto; }
 
-#splash-button-content {
+#splash__buttons {
   background-color: #F9F9F9;
-  margin: 30px 0 30px 0; }
+  margin: 30px 0; }
 
-#sam-url {
+#splash__logo_summary {
   text-align: center;
   width: 100%; }
 
-#sam-url > h2 {
-  font-weight: 600; }
+#splash__logo_summary > h2 {
+  font-weight: 600;
+  padding: 0 5%; }
 
-#buttons-summary {
+#splash__button_summary {
   text-align: center;
   width: 100%;
   margin: 35px; }
 
-#buttons-summary > p {
+#splash__button_summary > p {
   color: #5F5F5F;
-  padding-bottom: 0 !important;
+  padding-bottom: 0;
   font: 400 20px/1.5 "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif; }
 
-#splash-button {
-  margin: 10px auto 10px auto;
+#splash__btn_content {
+  margin: 10px auto;
   width: 230px;
   box-sizing: content-box; }
 
-.splash-button {
+.splash__btn_link {
   background-color: inherit;
   border: solid 2px #287DB6;
   border-radius: 8px;
@@ -7497,17 +7482,17 @@ input[type="search"] {
   text-decoration: none;
   padding: 2px; }
 
-.splash-button:hover {
+.splash__btn_link:hover {
   background-color: inherit;
   border: solid 3px #1f618e; }
 
-.splash-btn-icon {
+.button__icon {
   margin: auto;
   padding: 10px;
   align-self: center;
   max-height: 30px; }
 
-.splash-button > p {
+.splash__btn_link > p {
   color: #287DB6;
   font-weight: 700;
   text-align: left;
@@ -7515,22 +7500,25 @@ input[type="search"] {
   line-height: 1;
   margin: auto; }
 
-#video-summary {
-  margin: 0 20px 20px 20px;
+#splash__video_content {
+  margin: 0 20px 20px;
   width: 100%; }
 
-.video-summary {
+.splash__video_summary {
   font-size: 20px;
   color: #5F5F5F;
   line-height: 1.5;
   font-stretch: semi-condensed;
   text-align: center; }
 
-#video {
-  width: 100%;
+.splash__video {
   margin: auto; }
 
-#splash-footer {
+.splash__video_link {
+  display: block;
+  margin: auto; }
+
+#splash__footer {
   background-color: #D8E8F7;
   color: #01538F;
   text-align: center;
@@ -7538,70 +7526,63 @@ input[type="search"] {
   margin-top: 15px;
   width: 100%; }
 
-.splash-gsa-logo {
-  margin: auto; }
+.splash__footer_title {
+  font-family: Arial, Helvetica, sans-serif normal;
+  font-size: 20px;
+  padding: 15px; }
 
-.splash-footer-title {
+.splash__footer_summary {
   text-align: center;
-  font-size: 20px; }
-
-.splash-footer-summary {
-  text-align: center;
-  padding: 35px;
   color: #8B8F91; }
 
 @media all and (min-width: 500px) {
   .tablet\:grid-col {
     flex: 1 0 0;
     width: auto; }
-  .splash-banner-logo {
+  .splash__banner {
     max-width: 20%;
+    min-width: 250px;
     float: left;
     margin: 0; }
-  .splash-banner-logo:after {
+  .splash__banner:after {
     clear: both; }
-  #splash-header-content {
+  #splash__header {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px 0 20px; }
-  #splash-logo {
+    padding: 0 20px; }
+  #splash__logo {
     width: 100%;
     display: flex; }
-  #splash-wdol {
-    width: 50%; }
-  #splash-sam-url {
+  #splash__logo_content {
     width: 50%; }
   .splash-line {
     display: none; }
-  #splash-button-content {
+  #splash__buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%; }
-  #splash-btn-sum {
+  #splash__button_content {
     width: 600px;
-    margin: auto 25% auto 25%;
+    margin: auto 25%;
     display: block; }
-  #buttons-summary {
+  #splash__button_summary {
     text-align: center;
     margin: 20px auto; }
-  #splash-btn {
+  #splash__btn {
     margin: 20px;
     display: block; }
-  #splash-video-content {
+  #splash__video {
     display: flex;
     flex-direction: column-reverse;
     max-width: 600px;
-    margin: auto;
-    padding-top: 50px; }
-  #splash-vid {
-    margin-bottom: 15px; } }
+    margin: 20px auto; } }
 
 a {
   color: #0071BD; }
 
 a:visited {
-  color: #0071BD !important; }
+  color: #0071BD; }
 
 body {
   min-width: 550px;
@@ -7616,13 +7597,13 @@ h2 {
   letter-spacing: -.5px;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   line-height: 1.1em;
-  margin: calc(2rem - 0.05em) 0em 1rem; }
+  margin: calc(2rem - 0.05em) 0 1rem; }
 
 .wdol-sum > a {
   text-decoration: none;
   font-weight: 700px; }
 
-#sam-url > a {
+#splash__logo_summary > a {
   text-decoration: none;
   font-weight: 700px; }
 
@@ -7632,5 +7613,5 @@ hr {
   color: black; }
 
 .usa-banner-inner {
-  margin: 0 20 !important;
-  padding: 0 !important; }
+  margin: 0 20;
+  padding: 0; }
