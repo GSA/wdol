@@ -7448,10 +7448,6 @@ input[type="search"] {
   background-color: #F9F9F9;
   margin: 30px 0; }
 
-#splash__logo_summary {
-  text-align: center;
-  width: 100%; }
-
 #splash__logo_summary > h2 {
   font-weight: 600;
   padding: 0 5%; }
