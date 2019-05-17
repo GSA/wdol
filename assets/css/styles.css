@@ -1,4 +1,3 @@
-
 #splash__banner {
   text-align: center;
 }
@@ -245,4 +244,17 @@ hr {
 .usa-banner-inner {
   margin: 0 20;
   padding: 0;
+}
+
+
+/* LIBRARY OVERRIDES
+   ============================= */
+
+/* === accessible-html5-video-player === */
+
+/* Fixes flickering in video player time tooltip 
+ - USWDS adds styles to .clearfix::after
+*/
+.px-video-controls .clearfix::after{
+  content: none;
 }
