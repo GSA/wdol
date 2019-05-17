@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./libs/uswds-2.0.2/css/uswds.min.css" />
+    <link
+      rel="stylesheet"
+      href="./libs/accessible-html5-video-player/css/px-video.css"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>WDOL</title>
   </head>
@@ -203,15 +207,43 @@
         </div>
         <div class="grid-row">
           <div class="tablet:grid-col-12 splash__video">
-            <iframe
-              class="splash__video_link"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/5uciZ431AGo"
-              title="WDOL Video"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <div class="px-video-container" id="wdolvid">
+              <div class="px-video-img-captions-container">
+                <div class="px-video-captions hide" aria-hidden="true"></div>
+                <video
+                  width="640"
+                  height="360"
+                  poster="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+                  controls
+                >
+                  <source
+                    src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190517T211326Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=92c72e3762b3122d4b1b2d2c620517bcec8bfd5200b8e4e8ea956715ce6c421c"
+                    type="video/mp4"
+                  />
+                  <!-- <source src="foo.webm" type="video/webm" /> -->
+                  <track
+                    kind="captions"
+                    label="English captions"
+                    src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Captions.vtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190517T211326Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=376e9d217f52d2bd564936fa2ed48c5ba259a5b80795fccc450d1539d3a21a71"
+                    srclang="en"
+                    default
+                  />
+                  <div>
+                    <a
+                      href="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190517T211326Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=92c72e3762b3122d4b1b2d2c620517bcec8bfd5200b8e4e8ea956715ce6c421c"
+                    >
+                      <img
+                        src="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+                        width="640"
+                        height="360"
+                        alt="download video"
+                      />
+                    </a>
+                  </div>
+                </video>
+              </div>
+              <div class="px-video-controls"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,5 +271,17 @@
     </div>
 
     <script src="./libs/uswds-2.0.2/js/uswds.min.js"></script>
+    <script src="./libs/accessible-html5-video-player/js/strings.js"></script>
+    <script src="./libs/accessible-html5-video-player/js/px-video.js"></script>
+    <script>
+      // Initialize
+      new InitPxVideo({
+        videoId: "wdolvid",
+        captionsOnDefault: false,
+        seekInterval: 20,
+        videoTitle: "Training 001: Wage Determinations",
+        debug: true
+      });
+    </script>
   </body>
 </html>
