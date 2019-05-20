@@ -143,7 +143,8 @@ a:hover{
   align-items: center;
   width: 230px;
   height: 70px;
-  border: 2px solid #2378c3;
+  color: #2c608a; /* Had to change to darker blue for 508 */
+  border: 2px solid #2c608a;
   border-radius: 12px;
   margin-bottom: 40px;
   padding-right: 5px;

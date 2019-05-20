@@ -13,6 +13,9 @@
     <title>WDOL</title>
   </head>
   <body>
+    
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    
     <!-- USWDS Banner -->
     <div class="usa-banner">
       <div class="usa-accordion">
@@ -101,111 +104,113 @@
       </div>
     </header>
 
-    <!-- SAM.gov Beta and WDOL: Logos -->
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="grid-col-6 wdol-logos__wdol">
-          <img src="./assets/img/wdol.png" alt="WDOL Logo" />
-        </div>
-        <div class="grid-col-6 wdol-logos__sam">
-          <img src="./assets/img/sam-beta-logo.jpg" alt="SAM.gov Beta logo" />
-        </div>
-      </div>
-    </div>
-
-    <!-- SAM.gov Beta and WDOL: Content -->
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="grid-col-12 tablet:grid-col-6 dividing-line">
-          <p class="text-center wdol-logos-content__wdol">
-            WDOL.gov has moved to
-            <a href="https://beta.sam.gov/">beta.Sam.gov</a>
-            and is now known as Wage Determination
-          </p>
-        </div>
-        <div class="grid-col-12 tablet:grid-col-6">
-          <p class="text-center wdol-logos-content__sam">
-            Go to
-            <a href="https://beta.sam.gov/">
-              beta.SAM.gov
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Links Section -->
-    <div class="wdol-links">
+    <main id="main-content">
+      <!-- SAM.gov Beta and WDOL: Logos -->
       <div class="grid-container">
-        <p>
-          We've provided direct links to some useful areas on beta.SAM.gov to
-          help with your search for Wage Determinations:
-        </p>
-        <div class="wdol-links__content">
-          <a
-            href="https://beta.sam.gov/search?keywords=&sort=-modifiedDate&index=wd&is_active=true&page=1"
-          >
-            <img src="./assets/img/search.png" alt="Search Icon" />
-            Search Wage Determinations
-          </a>
-
-          <a href="https://www.dol.gov/whd/govcontracts/sca/sf98/index.asp">
-            <img src="./assets/img/document.png" alt="Document" />
-            e98 (request official SCA WD from DOL)
-          </a>
-
-          <a href="https://beta.sam.gov/help/wage-determinations">
-            <img src="./assets/img/question.png" alt="Question" />
-            Learning Center & Quick Start guides
-          </a>
+        <div class="grid-row grid-gap">
+          <div class="grid-col-6 wdol-logos__wdol">
+            <img src="./assets/img/wdol.png" alt="WDOL Logo" />
+          </div>
+          <div class="grid-col-6 wdol-logos__sam">
+            <img src="./assets/img/sam-beta-logo.jpg" alt="SAM.gov Beta logo" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Video Section -->
-    <div class="wdol-video grid-container">
-      <p>
-        beta.SAM.gov is now the authoritative and single location for obtaining
-        appropriate Service Contract Act (SCA) and Davis-Bacon Act (DBA) wage
-        determinations for each official contract action.
-      </p>
-      <div class="px-video-container" id="wdolvid">
-        <div class="px-video-img-captions-container">
-          <div class="px-video-captions hide" aria-hidden="true"></div>
-          <video
-            width="640"
-            height="360"
-            poster="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
-            controls
-          >
-            <source
-              src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190518T024843Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=22c874f9ba2d841496aac1029ca1fe1b807d8c9edd35a802e0eaa73a7663bd9c"
-              type="video/mp4"
-            />
-            <track
-              kind="captions"
-              label="English captions"
-              src="./assets/video/captions-test.vtt"
-              srclang="en"
-              default
-            />
-            <div>
-              <a
-                href="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190518T024843Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=22c874f9ba2d841496aac1029ca1fe1b807d8c9edd35a802e0eaa73a7663bd9c"
-              >
-                <img
-                  src="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
-                  width="640"
-                  height="360"
-                  alt="download video"
-                />
+  
+      <!-- SAM.gov Beta and WDOL: Content -->
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="grid-col-12 tablet:grid-col-6 dividing-line">
+            <p class="text-center wdol-logos-content__wdol">
+              WDOL.gov has moved to
+              <a href="https://beta.sam.gov/">beta.Sam.gov</a>
+              and is now known as Wage Determination
+            </p>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-6">
+            <p class="text-center wdol-logos-content__sam">
+              Go to
+              <a href="https://beta.sam.gov/">
+                beta.SAM.gov
               </a>
-            </div>
-          </video>
+            </p>
+          </div>
         </div>
-        <div class="px-video-controls"></div>
       </div>
-    </div>
+  
+      <!-- Links Section -->
+      <div class="wdol-links">
+        <div class="grid-container">
+          <p>
+            We've provided direct links to some useful areas on beta.SAM.gov to
+            help with your search for Wage Determinations:
+          </p>
+          <div class="wdol-links__content">
+            <a
+              href="https://beta.sam.gov/search?keywords=&sort=-modifiedDate&index=wd&is_active=true&page=1"
+            >
+              <img src="./assets/img/search.png" alt="Search Icon" />
+              Search Wage Determinations
+            </a>
+  
+            <a href="https://www.dol.gov/whd/govcontracts/sca/sf98/index.asp">
+              <img src="./assets/img/document.png" alt="Document" />
+              e98 (request official SCA WD from DOL)
+            </a>
+  
+            <a href="https://beta.sam.gov/help/wage-determinations">
+              <img src="./assets/img/question.png" alt="Question" />
+              Learning Center & Quick Start guides
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Video Section -->
+      <div class="wdol-video grid-container">
+        <p>
+          beta.SAM.gov is now the authoritative and single location for obtaining
+          appropriate Service Contract Act (SCA) and Davis-Bacon Act (DBA) wage
+          determinations for each official contract action.
+        </p>
+        <div class="px-video-container" id="wdolvid">
+          <div class="px-video-img-captions-container">
+            <div class="px-video-captions hide" aria-hidden="true"></div>
+            <video
+              width="640"
+              height="360"
+              poster="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+              controls
+            >
+              <source
+                src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190518T024843Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=22c874f9ba2d841496aac1029ca1fe1b807d8c9edd35a802e0eaa73a7663bd9c"
+                type="video/mp4"
+              />
+              <track
+                kind="captions"
+                label="English captions"
+                src="./assets/video/captions-test.vtt"
+                srclang="en"
+                default
+              />
+              <div>
+                <a
+                  href="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190518T024843Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=22c874f9ba2d841496aac1029ca1fe1b807d8c9edd35a802e0eaa73a7663bd9c"
+                >
+                  <img
+                    src="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+                    width="640"
+                    height="360"
+                    alt="download video"
+                  />
+                </a>
+              </div>
+            </video>
+          </div>
+          <div class="px-video-controls"></div>
+        </div>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer class="wdol-footer">
