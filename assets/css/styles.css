@@ -1,251 +1,247 @@
-#splash__banner {
-  text-align: center;
-}
-
-.splash__banner {
-  padding: 20px;
-}
-
-#splash__logo {
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#splash__logo_wdol {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 130px;
-}
-
-#splash__logo_summary {
-  text-align: center;
-  width: 100%;
-}
-
-.splash-line {
-  align-self: center;
-  width: 150px;
-  margin: 30px auto;
-}
-
-#splash__buttons {
-  background-color: #F9F9F9;
-  margin: 30px 0;
-}
-
-
-#splash__logo_summary > h2 {
-  font-weight: 600;
-  padding: 0 5%;
-}
-
-#splash__button_summary {
-  text-align: center;
-  width: 100%;
-  margin: 35px;
-}
-
-#splash__button_summary > p {
-  color: #5F5F5F;
-  padding-bottom: 0;
-  font: 400 20px/1.5 "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
-}
-
-#splash__btn_content {
-  margin: 10px auto;
-  width: 230px;
-  box-sizing: content-box;
-}
-
-.splash__btn_link {
-  background-color: inherit;
-  border: solid 2px #287DB6;
-  border-radius: 8px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 2px;
-}
-
-.splash__btn_link:hover {
-  background-color: inherit;
-  border: solid 3px #1f618e;
-}
-
-.button__icon {
-  margin: auto;
-  padding: 10px;
-  align-self: center;
-  max-height: 30px;
-}
-
-.splash__btn_link > p {
-  color: #287DB6;
-  font-weight: 700;
-  text-align: left;
-  letter-spacing: -0.5px;
-  line-height: 1;
-  margin: auto;
-}
-
-#splash__video_content {
-  margin: 0 20px 20px;
-  width: 100%;
-}
-
-.splash__video_summary {
-  font-size: 20px;
-  color: #5F5F5F;
-  line-height: 1.5;
-  font-stretch: semi-condensed;
-  text-align: center;
-}
-
-.splash__video{
-  margin: auto;
-}
-
-#splash__footer {
-  background-color: #D8E8F7;
-  color: #01538F;
-  text-align: center;
-  padding: 35px;
-  margin-top: 15px;
-  width: 100%;
-}
-
-
-.splash__footer_title {
-  font-family: Arial, Helvetica, sans-serif normal;
-  font-size: 20px;
-  padding: 15px;
-}
-
-.splash__footer_summary {
-  text-align: center;
-  color: #8B8F91;
-}
-@media all and (min-width: 500px) {
-  .tablet\:grid-col {
-    flex: 1 0 0;
-    width: auto;
-  }
-
-  .splash__banner {
-    max-width: 20%;
-    min-width: 250px;
-    float: left;
-    margin: 0;
-  }
-
-  .splash__banner:after {
-    clear: both;
-  }
-
-  #splash__header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-
-  #splash__logo {
-    width: 100%;
-    display: flex;
-  }
-
-  #splash__logo_content {
-    width: 50%;
-  }
-
-  .splash-line {
-    display: none;
-  }
-
-  #splash__buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  #splash__button_content {
-    width: 600px;
-    margin: auto 25%;
-    display: block;
-  }
-
-  #splash__button_summary {
-    text-align: center;
-    margin: 20px auto;
-  }
-
-  #splash__btn {
-    margin: 20px;
-    display: block;
-  }
-
-  #splash__video {
-    display: flex;
-    flex-direction: column-reverse;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-
-
+/* GLOBAL
+   ============================= */
+/* Enable semibold */
+@font-face{
+  font-family:Source Sans Pro Web;
+  font-style:normal;
+  font-weight:600;
+  font-display:fallback;
+  src:url(../../libs/uswds-2.0.2/fonts/source-sans-pro/sourcesanspro-semibold-webfont.woff2) format("woff2"), url(../../libs/uswds-2.0.2/fonts/source-sans-pro/sourcesanspro-semibold-webfont.woff) format("woff"), url(../../libs/uswds-2.0.2/fonts/source-sans-pro/sourcesanspro-semibold-webfont.ttf) format("truetype");
 }
 
 a {
-  color: #0071BD;
+  color: #2378c3;
+  text-decoration: none;
 }
 
-a:visited {
-  color: #0071BD;
+a:hover{
+  color: #162e51;
 }
 
-body {
-  min-width: 550px;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+/* HEADER SECTION
+   ============================= */
+
+.wdol-header .wdol-header__logo{
+  justify-content: center;
 }
 
-.grid-row {
+.wdol-header .wdol-header__logo img{
+  width: 210px;
+}
+
+/* === Tablet & Desktop === */
+/* Remove centering content in Tablet and Desktop */
+@media all and (min-width: 640px) {
+  .wdol-header .wdol-header__logo{
+    justify-content: flex-start;
+  }
+}
+
+/* WDOL AND SAM LOGOS
+   ============================= */
+.wdol-logos__wdol,
+.wdol-logos__sam {
+  display: flex;
+  align-items: center;
+}
+
+.wdol-logos__wdol{
+  justify-content: flex-end;
+}
+
+.wdol-logos__sam {
+  justify-content: flex-start;
+}
+
+.wdol-logos__wdol img{
+  margin-right: 20px;
+  width: 110px;
+}
+
+.wdol-logos__sam img{
+  width: 120px;
+}
+
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) {
+  .wdol-logos__wdol,
+  .wdol-logos__sam {
+    justify-content: center;
+  }
+
+  .wdol-logos__wdol img{
+    margin-top: -30px; /* Visually centers with text */
+    margin-right: 0;
+    width: 150px;
+  }
+
+  .wdol-logos__sam img{
+    width: 150px;
+  }
+}
+
+/* WDOL AND SAM CONTENT
+   ============================= */
+.dividing-line::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  border-bottom: 1px solid;
+}
+
+.wdol-logos-content__wdol{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.wdol-logos-content__sam {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) {
+  .dividing-line::after{
+    content: none; /* Hide dividing line */
+  }
+  .wdol-logos-content__wdol{
+    font-size: 26px;
+    margin: -15px 0 40px 0; /* Visually centers with logo */
+  }
+  .wdol-logos-content__sam{
+    margin: 20px 0 0 0;
+  }
+}
+
+/* LINKS SECTION
+   ============================= */
+.wdol-links {
+  background-color: #F9F9F9;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wdol-links p{
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.wdol-links .wdol-links__content {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
-h2 {
-  font-size: 30px;
-  letter-spacing: -.5px;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  line-height: 1.1em;
-  margin: calc(2rem - 0.05em) 0 1rem;
+.wdol-links .wdol-links__content a {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 70px;
+  border: 2px solid #2378c3;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  padding-right: 5px;
+  padding-left: 15px;
+  font-size: 18px;
 }
 
-.wdol-sum > a {
-  text-decoration: none;
-  font-weight: 700px;
+.wdol-links .wdol-links__content a:hover{
+  border-color: #162e51;
 }
 
-#splash__logo_summary > a {
-  text-decoration: none;
-  font-weight: 700px;
+.wdol-links .wdol-links__content img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
-hr {
-  height: 2px;
-  width: 100%;
-  color: black;
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) { 
+  .wdol-links p{
+    font-size: 24px;
+    text-align: left;
+  }
+  .wdol-links .wdol-links__content {
+    flex-direction: row;
+  }
+  .wdol-links .wdol-links__content a {
+    margin-right: 55px;
+  }
 }
 
-.usa-banner-inner {
-  margin: 0 20;
-  padding: 0;
+/* VIDEO SECTION
+   ============================= */
+.wdol-video {
+  margin-top: 50px;
 }
 
+.wdol-video p{
+  font-size: 22px;
+  text-align: center;
+  line-height: 34px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) { 
+  .wdol-video p{
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+/* FOOTER SECTION
+   ============================= */
+.wdol-footer{
+  background-color: #D9E8F6;
+  padding: 60px 0px;
+  margin-top: 80px;
+}
+
+.wdol-footer img{
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wdol-footer span{
+  color: #00538E;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.wdol-footer p{
+  margin-top: 40px;
+  text-align: center;
+  line-height: 25px;
+  padding: 0px 30px;
+}
+
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) { 
+  .wdol-footer img{
+    margin: initial;
+    display: inline-block;
+  }
+  .wdol-footer span{
+    display: inline-block;
+  }
+  .wdol-footer p{
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+}
 
 /* LIBRARY OVERRIDES
    ============================= */
