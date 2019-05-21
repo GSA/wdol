@@ -13,6 +13,9 @@
     <title>WDOL</title>
   </head>
   <body>
+    
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    
     <!-- USWDS Banner -->
     <div class="usa-banner">
       <div class="usa-accordion">
@@ -84,197 +87,151 @@
         </div>
       </div>
     </div>
-    <!-- USWDS Banner -->
 
-    <div class="">
-      <!--Splash Banner-->
-      <div class="grid-row">
-        <div class="tablet:grid-col-12" id="splash__banner">
+    <!-- Header -->
+    <header
+      class="wdol-header border-bottom border-base-light padding-2 margin-bottom-6"
+    >
+      <div class="grid-container">
+        <div class="grid-row wdol-header__logo">
           <a href="https://beta.sam.gov/">
             <img
-              class="splash__banner"
               src="./assets/img/samgov_horizontal.png"
-              alt="beta sam banner"
-              width="50%"
+              alt="SAM.gov Beta Logo"
             />
           </a>
         </div>
       </div>
-      <hr />
-      <!--Logo Headers-->
-      <div id="splash__header">
-        <div class="grid-row" id="splash__logo">
-          <div class="tablet:grid-col-6" id="splash__logo_wdol">
-            <img src="./assets/img/wdol.png" alt="WDOL Logo" height="70px" />
+    </header>
+
+    <main id="main-content">
+      <!-- SAM.gov Beta and WDOL: Logos -->
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="grid-col-6 wdol-logos__wdol">
+            <img src="./assets/img/wdol.png" alt="WDOL Logo" />
           </div>
-          <div class="tablet:grid-col-6" id="splash__logo_wdol">
-            <img
-              src="./assets/img/sam-beta-logo.jpg"
-              alt="sam beta logo"
-              height="130px"
-            />
+          <div class="grid-col-6 wdol-logos__sam">
+            <img src="./assets/img/sam-beta-logo.jpg" alt="SAM.gov Beta logo" />
           </div>
         </div>
-        <div class="grid-row" id="splash__logo_content">
-          <div class="tablet:grid-col" id="splash__logo_summary">
-            <h2 class="wdol-sum">
+      </div>
+  
+      <!-- SAM.gov Beta and WDOL: Content -->
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="grid-col-12 tablet:grid-col-6 dividing-line">
+            <p class="text-center wdol-logos-content__wdol">
               WDOL.gov has moved to
-              <a href="https://beta.sam.gov/" class="splash-url"
-                >beta.Sam.gov</a
-              >
+              <a href="https://beta.sam.gov/">beta.Sam.gov</a>
               and is now known as Wage Determination
-            </h2>
+            </p>
           </div>
-        </div>
-        <hr class="splash-line" />
-        <div class="grid-row" id="splash__logo_content">
-          <div class="tablet:grid-col" id="splash__logo_summary">
-            <h2>
+          <div class="grid-col-12 tablet:grid-col-6">
+            <p class="text-center wdol-logos-content__sam">
               Go to
-              <a href="https://beta.sam.gov/" class="splash-url">
+              <a href="https://beta.sam.gov/">
                 beta.SAM.gov
               </a>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <!--Button Section-->
-      <div id="splash__buttons">
-        <div class="grid-row" id="splash__button_content">
-          <div class="tablet:grid-col" id="splash__button_summary">
-            <p>
-              We've provided direct links to some useful areas on beta.SAM.gov
-              to help with your search for Wage Determinations:
             </p>
           </div>
         </div>
-        <div class="grid-row" id="splash__btn">
-          <div class="tablet:grid-col" id="splash__btn_content">
+      </div>
+  
+      <!-- Links Section -->
+      <div class="wdol-links">
+        <div class="grid-container">
+          <p>
+            We've provided direct links to some useful areas on beta.SAM.gov to
+            help with your search for Wage Determinations:
+          </p>
+          <div class="wdol-links__content">
             <a
               href="https://beta.sam.gov/search?keywords=&sort=-modifiedDate&index=wd&is_active=true&page=1"
-              class="splash__btn_link"
             >
-              <img
-                class="button__icon"
-                src="./assets/img/search.png"
-                alt="search"
-              />
-              <p>Search Wage Determinations</p>
+              <img src="./assets/img/search.png" alt="Search Icon" />
+              Search Wage Determinations
             </a>
-          </div>
-        </div>
-        <div class="grid-row" id="splash__btn">
-          <div class="tablet:grid-col" id="splash__btn_content">
-            <a
-              href="https://www.dol.gov/whd/govcontracts/sca/sf98/index.asp"
-              class="splash__btn_link"
-            >
-              <img
-                class="button__icon"
-                src="./assets/img/document.png"
-                alt="document"
-              />
-              <p>e98 (request official SCA WD from DOL)</p>
+  
+            <a href="https://www.dol.gov/whd/govcontracts/sca/sf98/index.asp">
+              <img src="./assets/img/document.png" alt="Document" />
+              e98 (request official SCA WD from DOL)
             </a>
-          </div>
-        </div>
-        <div class="grid-row" id="splash__btn">
-          <div class="tablet:grid-col" id="splash__btn_content">
-            <a
-              href="https://beta.sam.gov/help/wage-determinations"
-              class="splash__btn_link"
-            >
-              <img
-                class="button__icon"
-                src="./assets/img/question.png"
-                alt="question"
-              />
-              <p>Learning Center & Quick Start guides</p>
+  
+            <a href="https://beta.sam.gov/help/wage-determinations">
+              <img src="./assets/img/question.png" alt="Question" />
+              Learning Center & Quick Start guides
             </a>
           </div>
         </div>
       </div>
-      <!--Video Section-->
-      <div id="splash__video">
-        <div class="grid-row">
-          <div class="tablet:grid-col-12" id="splash__video_content">
-            <p class="splash__video_summary">
-              beta.SAM.gov is now the authoritative and single location for
-              obtaining appropriate Service Contract Act (SCA) and Davis-Bacon
-              Act (DBA) wage determinations for each official contract action.
-            </p>
-          </div>
-        </div>
-        <div class="grid-row">
-          <div class="tablet:grid-col-12 splash__video">
-            <div class="px-video-container" id="wdolvid">
-              <div class="px-video-img-captions-container">
-                <div class="px-video-captions hide" aria-hidden="true"></div>
-                <video
-                  width="640"
-                  height="360"
-                  poster="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
-                  controls
+  
+      <!-- Video Section -->
+      <div class="wdol-video grid-container">
+        <p>
+          beta.SAM.gov is now the authoritative and single location for obtaining
+          appropriate Service Contract Act (SCA) and Davis-Bacon Act (DBA) wage
+          determinations for each official contract action.
+        </p>
+        <div class="px-video-container" id="wdolvid">
+          <div class="px-video-img-captions-container">
+            <div class="px-video-captions hide" aria-hidden="true"></div>
+            <video
+              poster="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+              controls
+            >
+              <source
+                src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190520T212728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=47bb71c30213eefa8fbe702822937c9833893216ea6f0edb1c94eba8395f4380"
+                type="video/mp4"
+              />
+              <track
+                kind="captions"
+                label="English captions"
+                src="./assets/video/captions-test.vtt"
+                srclang="en"
+                default
+              />
+              <div>
+                <a
+                  href="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190520T212728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190520%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=47bb71c30213eefa8fbe702822937c9833893216ea6f0edb1c94eba8395f4380"
                 >
-                  <source
-                    src="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190517T211326Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=92c72e3762b3122d4b1b2d2c620517bcec8bfd5200b8e4e8ea956715ce6c421c"
-                    type="video/mp4"
+                  <img
+                    src="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
+                    width="640"
+                    height="360"
+                    alt="download video"
                   />
-                  <!-- <source src="foo.webm" type="video/webm" /> -->
-                  <track
-                    kind="captions"
-                    label="English captions"
-                    src="./assets/video/captions-test.vtt"
-                    srclang="en"
-                    default
-                  />
-                  <div>
-                    <a
-                      href="https://iae-prd-videos.s3.amazonaws.com/videos/Sam-Video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190517T211326Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86399&X-Amz-Credential=AKIAIYCXUFQKOIDOX5BQ%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=92c72e3762b3122d4b1b2d2c620517bcec8bfd5200b8e4e8ea956715ce6c421c"
-                    >
-                      <img
-                        src="https://beta.sam.gov/assets/img/home/lady-laptop.jpg"
-                        width="640"
-                        height="360"
-                        alt="download video"
-                      />
-                    </a>
-                  </div>
-                </video>
+                </a>
               </div>
-              <div class="px-video-controls"></div>
-            </div>
+            </video>
           </div>
+          <div class="px-video-controls"></div>
         </div>
       </div>
-      <!--Splash Footer-->
-      <div class="grid-row">
-        <div class="tablet:grid-col-12" id="splash__footer">
-          <img
-            class="margin-x-auto"
-            src="./assets/img/GSA.png"
-            alt="GSA Logo"
-            height="100px"
-          />
-          <div class="splash__footer_title">
-            U.S. General Services Administration
-          </div>
-          <p class="splash__footer_summary">
-            This is a U.S. General Services Administration Federal Government
-            computer system that is "FOR OFFICIAL USE ONLY." This system is
-            subject to monitoring. Individuals found performing unauthorized
-            activities are subject to disciplinary action including criminal
-            prosecution.
-          </p>
-        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="wdol-footer">
+      <div class="grid-container">
+        <img src="./assets/img/GSA.png" alt="GSA Logo" />
+        <span>
+          U.S. General Services Administration
+        </span>
+        <p>
+          This is a U.S. General Services Administration Federal Government
+          computer system that is "FOR OFFICIAL USE ONLY." This system is
+          subject to monitoring. Individuals found performing unauthorized
+          activities are subject to disciplinary action including criminal
+          prosecution.
+        </p>
       </div>
-    </div>
+    </footer>
 
     <script src="./libs/uswds-2.0.2/js/uswds.min.js"></script>
     <script src="./libs/accessible-html5-video-player/js/strings.js"></script>
     <script src="./libs/accessible-html5-video-player/js/px-video.js"></script>
     <script>
-      // Initialize
+      // Initialize Video
       new InitPxVideo({
         videoId: "wdolvid",
         captionsOnDefault: false,
