@@ -163,10 +163,10 @@ a:hover{
 }
 
 /* === Tablet & Desktop === */
-@media all and (min-width: 640px) { 
+@media all and (min-width: 640px) {
   .wdol-links p{
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
   .wdol-links .wdol-links__content {
     flex-direction: row;
@@ -191,10 +191,10 @@ a:hover{
 }
 
 /* === Tablet & Desktop === */
-@media all and (min-width: 640px) { 
+@media all and (min-width: 640px) {
   .wdol-video p{
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -229,18 +229,20 @@ a:hover{
 }
 
 /* === Tablet & Desktop === */
-@media all and (min-width: 640px) { 
+@media all and (min-width: 640px) {
   .wdol-footer img{
-    margin: initial;
-    display: inline-block;
+    margin: auto;
+    display: block;
   }
   .wdol-footer span{
-    display: inline-block;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
   }
   .wdol-footer p{
     padding: 0;
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -257,10 +259,11 @@ a:hover{
 @media all and (min-width: 640px) {
   .px-video-container {
     width: 640px !important;
+    margin: auto;
   }
 }
 
-/* Fixes flickering in video player time tooltip 
+/* Fixes flickering in video player time tooltip
  - USWDS adds styles to .clearfix::after
 */
 .px-video-controls .clearfix::after{
