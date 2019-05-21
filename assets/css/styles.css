@@ -172,7 +172,7 @@ a:hover{
     flex-direction: row;
   }
   .wdol-links .wdol-links__content a {
-    margin-right: 55px;
+    margin: auto;
   }
 }
 
