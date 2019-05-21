@@ -249,6 +249,17 @@ a:hover{
 
 /* === accessible-html5-video-player === */
 
+.px-video-container video{
+  width: 100%;
+}
+
+/* === Tablet & Desktop === */
+@media all and (min-width: 640px) {
+  .px-video-container {
+    width: 640px !important;
+  }
+}
+
 /* Fixes flickering in video player time tooltip 
  - USWDS adds styles to .clearfix::after
 */
