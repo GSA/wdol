@@ -191,6 +191,15 @@ a:hover{
   margin-bottom: 40px;
 }
 
+video::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+}
+
+video::cue(b) {
+  color: peachpuff;
+}
+
 /* === Tablet & Desktop === */
 @media all and (min-width: 640px) {
   .wdol-video p{
